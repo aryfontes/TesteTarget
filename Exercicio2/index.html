@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+ 
+        const verificaNumInteiro = (x) => {
+            let s = parseInt(Math.sqrt(x));
+            return (s * s == x);
+        }
+
+        const fibonacci = (n) => {
+            return verificaNumInteiro(5 * n * n + 4) ||
+                verificaNumInteiro(5 * n * n - 4);
+        }
+
+
+        //DIGITE AQUI PARA VERIFICAR O NÚMERO
+        const numVerifica = 8
+
+        if(fibonacci(numVerifica)) {
+            console.log(`O número ${numVerifica} é um número Fibonacci!`)
+        } else {
+            console.log(`O número ${numVerifica} NÃO é um número Fibonacci!`)
+        }
+
+    </script>
+
+</body>
+
+</html>

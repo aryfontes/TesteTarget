@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    const sp = 6783643;
+    const rj = 3667866;
+    const mg = 2922988;
+    const es = 2716548;
+    const others = 1984953;
+
+    const sum = sp + rj + mg + es + others;
+
+    const Percent = (n) => {
+       return(((100 * n) / sum)).toFixed(2) 
+    }
+
+    Percent(sp)
+    console.log(`A representação de SP é de ${Percent(sp)}%`)
+
+    Percent(rj)
+    console.log(`A representação de RJ é de ${Percent(rj)}%`)
+
+    Percent(mg)
+    console.log(`A representação de MG é de ${Percent(mg)}%`)
+
+    Percent(es)
+    console.log(`A representação de MG é de ${Percent(es)}%`)
+
+    Percent(others)
+    console.log(`A representação de MG é de ${Percent(others)}%`)
+</script>
+
+</html>
